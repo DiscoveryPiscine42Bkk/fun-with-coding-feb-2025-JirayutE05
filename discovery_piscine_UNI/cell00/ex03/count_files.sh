@@ -1,1 +1,1 @@
-42$
+./count_files.sh | cat-e
