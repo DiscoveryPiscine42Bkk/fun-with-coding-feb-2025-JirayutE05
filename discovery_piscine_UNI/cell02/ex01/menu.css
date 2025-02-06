@@ -20,7 +20,19 @@ body {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border: 30px solid #b58969;
 }
+/* ... (CSS ส่วนอื่น ๆ เหมือนเดิม) ... */
 
+.dropdown-content li a {
+    display: flex; /* ใช้ flexbox ในการจัดเรียงรูปและข้อความ */
+    align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    padding: 10px; /* เพิ่มช่องว่างรอบรูปและข้อความ */
+}
+
+.dropdown-content li a img {
+    margin-right: 10px; /* เพิ่มช่องว่างระหว่างรูปและข้อความ */
+}
+
+/* ... (CSS ส่วนอื่น ๆ เหมือนเดิม) ... */
 body {
     font-family: Arial, sans-serif;
     background-color: green;
