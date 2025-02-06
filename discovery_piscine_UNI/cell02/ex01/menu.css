@@ -1,3 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: green;
+    display: flex;
+    flex-direction: column; /* เรียง elements แนวตั้ง */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.sandwich-image {
+    margin-bottom: 20px; /* เว้นระยะห่างระหว่างรูปกับเมนู */
+}
+
+.menu {
+    background-color: yellow;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 30px solid #b58969;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -60,3 +82,4 @@ body {
 nav.menu {
     margin-top: 20px; 
 }
+
