@@ -19,17 +19,17 @@ select {
 body:has(#menu option[value="0"]:checked) #sandwich {    
     height: 400px;
 }
-body:has(#menu option[value="1"]:checked) #sandwich {
+body:has(#menu option[value="3"]:checked) #sandwich {
     content: url("https://i.pinimg.com/736x/5a/0c/b9/5a0cb9995a50900317ce78aac7f68ba0.jpg");
     height: 400px;
 }
 
-body:has(#menu option[value="2"]:checked) #sandwich {
+body:has(#menu option[value="1"]:checked) #sandwich {
     content: url("https://i.pinimg.com/736x/34/58/ba/3458ba6f9e61f4ef98a415a52e4a4d04.jpg");
     height: 400px;
 }
 
-body:has(#menu option[value="3"]:checked) #sandwich {
+body:has(#menu option[value="2"]:checked) #sandwich {
     content: url("https://i.pinimg.com/736x/6e/bf/16/6ebf16e2aefe6cb5bab96c5fcb8ee95d.jpg");
     height: 400px;
 }
