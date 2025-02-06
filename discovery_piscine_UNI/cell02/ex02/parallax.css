@@ -1,1 +1,44 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
 
+#section1 {
+    background-image: url('https://images2.minutemediacdn.com/image/upload/c_crop,w_4000,h_2250,x_0,y_196/c_fill,w_1440,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/90min_th_international_web/01hrawg5pwqjmw5qt3ta.jpg');
+}
+
+#section2 {
+    background-image: url('https://www.khaosod.co.th/wpapp/uploads/2022/11/%E0%B8%9A%E0%B8%B2%E0%B9%80%E0%B8%A2%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%992-61.jpg');
+}
+
+.message {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.block {
+    height: 50vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    text-align: center;
+    color: yellow;
+}
