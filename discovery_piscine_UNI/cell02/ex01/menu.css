@@ -1,41 +1,10 @@
+
+
 body {
     font-family: Arial, sans-serif;
-    background-color: green;
-    display: flex;
-    flex-direction: column; /* เรียง elements แนวตั้ง */
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 18%, #eeedf0 100%);
 
-.sandwich-image {
-    margin-bottom: 20px; /* เว้นระยะห่างระหว่างรูปกับเมนู */
-}
-
-.menu {
-    background-color: yellow;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border: 30px solid #b58969;
-}
-/* ... (CSS ส่วนอื่น ๆ เหมือนเดิม) ... */
-
-.dropdown-content li a {
-    display: flex; /* ใช้ flexbox ในการจัดเรียงรูปและข้อความ */
-    align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
-    padding: 10px; /* เพิ่มช่องว่างรอบรูปและข้อความ */
-}
-
-.dropdown-content li a img {
-    margin-right: 10px; /* เพิ่มช่องว่างระหว่างรูปและข้อความ */
-}
-
-/* ... (CSS ส่วนอื่น ๆ เหมือนเดิม) ... */
-body {
-    font-family: Arial, sans-serif;
-    background-color: green;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,55 +12,25 @@ body {
     margin: 0;
 }
 
-.menu {
-    background-color: yellow;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border: 30px solid #b58969;
+select {
+    border-radius: 20px;
 }
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+body:has(#menu option[value="0"]:checked) #sandwich {    
+    height: 400px;
 }
-.menu ul li {
-    position: relative;
-    display: inline-block;
+body:has(#menu option[value="1"]:checked) #sandwich {
+    content: url("https://i.pinimg.com/736x/5a/0c/b9/5a0cb9995a50900317ce78aac7f68ba0.jpg");
+    height: 400px;
 }
-.menu ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 10px 20px;
-    display: block;
-    transition: background 0.3s;
+
+body:has(#menu option[value="2"]:checked) #sandwich {
+    content: url("https://i.pinimg.com/736x/34/58/ba/3458ba6f9e61f4ef98a415a52e4a4d04.jpg");
+    height: 400px;
 }
-.menu ul li a:hover {
-    background-color: #ffa500;
-    border-radius: 5px;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 150px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    padding: 10px 0;
-    z-index: 1000;
-}
-.dropdown-content li {
-    padding: 10px;
-    text-align: center;
-}
-.dropdown-content li:hover {
-    background-color: #ffcc00;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-nav.menu {
-    margin-top: 20px; 
+
+body:has(#menu option[value="3"]:checked) #sandwich {
+    content: url("https://i.pinimg.com/736x/6e/bf/16/6ebf16e2aefe6cb5bab96c5fcb8ee95d.jpg");
+    height: 400px;
 }
 
