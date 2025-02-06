@@ -1,35 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SNCF Sandwich Menu</title>
-    <link rel="stylesheet" href="menu.css">
-</head>
-<body>
-    <nav class="menu">
-        <ul>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">SNCF Sandwich🥪</a>
-                <ul class="dropdown-content">
-                    <li>
-                        <a href="#">
-                            <img src="https://i.pinimg.com/736x/5a/0c/b9/5a0cb9995a50900317ce78aac7f68ba0.jpg" alt="Ham & Cheese" width="50"> Ham & Cheese
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="https://i.pinimg.com/736x/34/58/ba/3458ba6f9e61f4ef98a415a52e4a4d04.jpg" alt="Chicken & Mayo" width="50"> Chicken & Mayo
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="https://i.pinimg.com/736x/6e/bf/16/6ebf16e2aefe6cb5bab96c5fcb8ee95d.jpg" alt="Veggie Delight" width="50"> Veggie Delight
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-</body>
-</html>
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 18%, #eeedf0 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+select {
+    border-radius: 20px;
+}
+
+body:has(#menu option[value="0"]:checked) #sandwich {    
+    height: 400px;
+}
+body:has(#menu option[value="1"]:checked) #sandwich {
+    content: url("https://i.pinimg.com/736x/5a/0c/b9/5a0cb9995a50900317ce78aac7f68ba0.jpg");
+    height: 400px;
+}
+
+body:has(#menu option[value="2"]:checked) #sandwich {
+    content: url("https://i.pinimg.com/736x/34/58/ba/3458ba6f9e61f4ef98a415a52e4a4d04.jpg");
+    height: 400px;
+}
+
+body:has(#menu option[value="3"]:checked) #sandwich {
+    content: url("https://i.pinimg.com/736x/6e/bf/16/6ebf16e2aefe6cb5bab96c5fcb8ee95d.jpg");
+    height: 400px;
+}
+
