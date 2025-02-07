@@ -26,22 +26,24 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-
         }
         h1 {
             margin-bottom: 30px;
+            font-size: 40px;
+            font-weight: bold;
         }
         .profile-container {
             display: flex;
             justify-content: center;
-            gap: 50px; /* ระยะห่างระหว่างวงกลม */
+            gap: 50px;
+            flex-wrap: wrap; /* อนุญาตให้ภาพไปอยู่ในแถวถัดไปเมื่อพื้นที่ไม่พอ */
         }
         .profile {
-            width: 330px;
-            height: 330px;
+            width: 250px; /* กำหนดขนาดเริ่มต้น */
+            height: 250px;
             background-color: gray;
             border-radius: 50%;
-            overflow: hidden; /* ทำให้รูปภาพอยู่ในกรอบวงกลม */
+            overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -51,15 +53,37 @@
         .profile img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* ทำให้รูปภาพเต็มวงกลม */
+            object-fit: cover;
         }
         .profile:hover {
             transform: scale(1.1);
         }
-        h1 {
-            font-size: 40px; /* เพิ่มขนาดตัวอักษร */
-            font-weight: bold;
-            margin-bottom: 30px;
+        /* Media Query สำหรับหน้าจอขนาดเล็ก */
+        @media (max-width: 768px) {
+            .profile-container {
+                gap: 30px; /* ลดระยะห่างระหว่างวงกลม */
+            }
+            .profile {
+                width: 200px; /* ลดขนาดภาพให้เล็กลง */
+                height: 200px;
+            }
+            h1 {
+                font-size: 32px; /* ลดขนาดตัวอักษรในหัวข้อ */
+            }
+        }
+
+        /* Media Query สำหรับหน้าจอขนาดเล็กที่สุด (มือถือ) */
+        @media (max-width: 480px) {
+            .profile-container {
+                gap: 20px;
+            }
+            .profile {
+                width: 180px;
+                height: 180px;
+            }
+            h1 {
+                font-size: 28px; /* ลดขนาดตัวอักษรในหัวข้อ */
+            }
         }
     </style>
 </head>
@@ -68,15 +92,11 @@
     <h1>Welcome to my website</h1>
 
     <div class="profile-container">
-        <a href="file:///C:/Users/User/OneDrive/Documents/GitHub/fun-with-coding-feb-2025-JirayutE05/discovery_piscine_UNI/cell4.0/portfolio/portfolio.html" class="profile">
+        <a href="file:///C:/Users/User/OneDrive/%E0%B9%80%E0%B8%94%E0%B8%AA%E0%B8%81%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B9%87%E0%B8%AD%E0%B8%9B/test/portfolio.html" class="profile">
             <img src="https://cdn.discordapp.com/attachments/1295010117024219198/1337043013783785553/IMG_5696.jpg?ex=67a601d7&is=67a4b057&hm=2f8b57819174ebe0bf6ba872c9e718d79649e90a6961c908810c2b2a6fe913cd&" alt="Profile 1">
         </a>
-    <div class="profile-container">
-    <div class="profile">
-    <div class="profile img">
-    <div class="profile:hover">
-        <a href="file:///C:/Users/User/OneDrive/Documents/GitHub/fun-with-coding-feb-2025-JirayutE05/discovery_piscine_UNI/cell4.0/portflio(peanut)/portfolio(peanuts).html">
-            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/475868479_1040932101404053_2123322618663406604_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=p9UOtfmMeWcQ7kNvgHMZJbq&_nc_oc=AdhG46uAeYqxBq6aMpVvnSciisgmD9e_gjTs82nzNS50tVn9Mlj6OYpmIaye__y8Zh8Z2Ulhhw544EGNBn71a1RU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gE85GLF8Ba4LqtgFHLoBaL4_mcZwmrmATFgfUdYFdnRdA&oe=67CDB035" alt="Profile 2">
+        <a href="https://profile2.com" class="profile">
+            <img src="https://media.discordapp.net/attachments/1295010117024219198/1337030696878997567/IMG_2272.jpg?ex=67a5f65e&is=67a4a4de&hm=c6046afdd5502d49b8c0339790e681db21fd0463ca7563e8acba6068a3daa2d8&=&format=webp&width=503&height=671" alt="Profile 2">
         </a>
     </div>
 
@@ -92,4 +112,3 @@
 
 </body>
 </html>
-
