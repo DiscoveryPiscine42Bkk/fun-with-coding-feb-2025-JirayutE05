@@ -87,7 +87,7 @@ body {
     gap: 20px;
 }
 
-.activity div {
+.activity div { 
     width: 250px;
     text-align: center;
 }
