@@ -1,1 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1e9898;
+    transition: background 0.5s ease-in-out;
+}
 
+.home {
+    width: 80%;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.container {
+ width: 80%;
+ margin: auto;
+ padding: 80px 20px;
+flex-direction: column; /* จัดเรียงแนวตั้ง */
+align-items: center; /* จัดตรงกลางแนวนอน */
+justify-content: center; /* จัดตรงกลางแนวตั้ง */
+text-align: center; /* จัดข้อความตรงกลาง */
+ }
+
+
+header {
+    background: white;
+    color: #0cd48b;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 1%;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #177e8e;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navigation a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.section {
+    padding: 80px 20px;
+    margin: 50px 0;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.5s ease-in-out;
+}
+
+#Home { background: #ffe4a1; text-align: center; }
+#About { background: #f8d7da; text-align: center; }
+#experience { background: #cce5ff; }
+#contact { background: #d4edda; }
+
+/* รูปภาพ */
+.Home-img {
+    width: 100%; /* ปรับให้เป็นเปอร์เซ็นต์ */
+    max-width: 350px; /* กำหนดขนาดสูงสุด */
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* ปรับขนาดสำหรับมือถือขนาดเล็ก */
+    @media screen and (max-width: 480px) {
+    .Home-img {
+    max-width: 200px; /* ลดขนาดลงเมื่อจอเล็ก */
+}
+
+.about-img {
+    max-width: 150px; /* ลดขนาดลงเมื่อจอเล็ก */
+}
+}
+
+
+.experience-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.experience-images img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.experience-images img:hover {
+    transform: scale(1.3); /* ขยายไอคอนเมื่อ Hover */
+    pacity: 0.8; /* ทำให้ไอคอนจางลงเล็กน้อย */
+}
+.experience-images img{
+    width: 150px; /* ปรับขนาดเริ่มต้น */
+    height: 150px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* เพิ่มเอฟเฟกต์ */
+}
