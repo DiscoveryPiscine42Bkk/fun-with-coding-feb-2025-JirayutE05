@@ -57,16 +57,6 @@
       }
     });
 
-    balloon.addEventListener('mouseleave', () => {
-      if (size > 200) {
-        size -= 10;
-        balloon.style.width = size + 'px';
-        balloon.style.height = size + 'px';
-
-        colorIndex = (colorIndex - 1 + colors.length) % colors.length;
-        balloon.style.backgroundColor = colors[colorIndex];
-      }
-    });
   </script>
 
 </body>
